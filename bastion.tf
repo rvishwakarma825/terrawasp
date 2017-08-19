@@ -56,7 +56,7 @@ resource "aws_instance" "bastion1" {
   associate_public_ip_address = "true"
   vpc_security_group_ids = ["${aws_security_group.bastion_sg.id}"]
         tags {
-          Name = "bastion1"
+          Name = "Windows_bastion"
   }
 }
 
@@ -68,7 +68,7 @@ resource "aws_instance" "bastion2" {
   associate_public_ip_address = "true"
   vpc_security_group_ids = ["${aws_security_group.bastion_sg.id}"]
         tags {
-          Name = "bastion2"
+          Name = "Ubuntu_Bastion"
   }
 }
 
