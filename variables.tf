@@ -38,5 +38,5 @@ variable "aws_rdsusername" {
   default = "db_user"
 }
 variable "aws_rdspass" {
-  default = "yourpassword"
+  default = "yoURpassw0rd"
 }
